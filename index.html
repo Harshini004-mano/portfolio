@@ -2,177 +2,40 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <title>HARSHINI | Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>M. HARSHINI Portfolio</title>
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-
-  <style>
-    /* ---------- Base Styles ---------- */
-    body {
-      background: #0b0712;
-      color: #f7f9ff;
-      font-family: 'Roboto', sans-serif;
-      padding: 20px;
-      margin: 0;
-    }
-
-    h1, h2, h3 {
-      font-family: 'Montserrat', sans-serif;
-    }
-    h1 { color: #ff4d6d; }
-    h2 { color: #ffd166; margin-top: 40px; }
-    h3 { color: #6cdbf7; }
-    p, li { color: #cdd6f4; }
-    a { color: #6cdbf7; text-decoration: none; transition: all 0.3s ease; }
-    a:hover { text-decoration: underline; }
-    img { border-radius: 12px; margin-bottom: 12px; max-width: 100%; height: auto; }
-    ul { list-style-type: square; padding-left: 20px; }
-    section { margin-bottom: 40px; opacity: 0; transform: translateY(20px); animation: fadeIn 1s forwards; }
-    section:nth-of-type(1) { animation-delay: 0.5s; }
-    section:nth-of-type(2) { animation-delay: 0.7s; }
-    section:nth-of-type(3) { animation-delay: 0.6s; }
-    section:nth-of-type(4) { animation-delay: 0.8s; }
-    section:nth-of-type(5) { animation-delay: 1s; }
-    section:nth-of-type(6) { animation-delay: 1.2s; }
-
-    @keyframes fadeIn {
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    /* ---------- Buttons ---------- */
-    a.button {
-      display: inline-block;
-      padding: 10px 18px;
-      border-radius: 12px;
-      font-weight: bold;
-      text-decoration: none;
-      transition: transform 0.3s, background 0.3s;
-    }
-    a.button:hover {
-      transform: scale(1.05);
-    }
-
-    /* ---------- Projects Grid ---------- */
-    .projects-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
-    }
-    .project-card {
-      background:#1a1026;
-      padding:20px;
-      border-radius:14px;
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
-    .project-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 20px rgba(255,255,255,0.1);
-    }
-
-    /* ---------- Responsive ---------- */
-    @media (max-width: 600px) {
-      body { padding: 10px; }
-      h1 { font-size: 1.8rem; }
-      h2 { font-size: 1.4rem; }
-    }
-  </style>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- HERO SECTION -->
-  <section id="home">
-    <img src="photo.jpeg" alt="M. HARSHINI" width="200">
-    <h1>Hi, I'm M. HARSHINI</h1>
-    <p>Web Developer, Student, Software Engineer</p>
-    <p>Email: <a href="mailto:harshinimanoharan004@gmail.com">harshinimanoharan004@gmail.com</a></p>
-    <p>GitHub: <a href="https://github.com/Harshini004-mano" target="_blank">github.com/Harshini004-mano</a></p>
-  </section>
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="logo">HARSHINI</div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="skills.html">Skills</a></li>
+    <li><a href="projects.html">Projects</a></li>
+  </ul>
+</nav>
 
-  <!-- ABOUT ME -->
-  <section id="about">
-    <h2>About Me</h2>
-    <section id="about">
-  <p>
-    I am M. HARSHINI, a passionate web developer and student who enjoys creating colorful, practical, and user-friendly websites. 
-    I love learning new programming languages, frameworks, and technologies to enhance my skills. 
-    Building projects that solve real-world problems gives me immense satisfaction and motivation. 
-    I believe in combining creativity with logic to develop websites and applications that are both functional and visually appealing. 
-    Collaboration and teamwork are important to me, as they allow me to learn from others and improve my own abilities. 
-    I take pride in paying attention to detail and ensuring that every project I work on is polished and professional. 
-    Constant practice, experimentation, and problem-solving help me grow as a developer and push the boundaries of my knowledge.
-  </p>
-  
-  <p>
-    I am also an aspiring B.E. Computer Science student with a strong interest in data analysis, visualization, and machine learning. 
-    I enjoy exploring ways to extract meaningful insights from complex data and using it to create impactful solutions. 
-    I am committed to continuous learning, embracing challenges, and improving my technical and analytical skills. 
-    By working on diverse projects, I aim to apply my knowledge to real-world problems and contribute to innovative solutions. 
-    I am passionate about using technology to make processes more efficient, accessible, and effective. 
-    My goal is to combine my web development and data skills to create solutions that are both practical and influential. 
-    I strive to maintain curiosity, creativity, and dedication in every project I undertake, ensuring growth and meaningful contributions.
-  </p>
-</section>
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Hi, I'm <span>HARSHINI</span></h1>
+    <h2>Creative Web Developer & Designer</h2>
+    <p>
+       Designing digital spaces with creativity, elegance, and heart 💕 <br>
+       Let’s build something amazing together.
+       Frontend Developer | UI Enthusiast | Problem Solver <br>
+       Building responsive, modern, and user-friendly experiences.
+       Crafting stunning websites with creativity and precision. <br>
+       Where design meets innovation.
+    </p>
+    <a href="resume.pdf" class="btn" target="_blank">Download Resume</a>
+  </div>
 
-  <!-- SKILLS -->
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
-      <li>React</li>
-      <li>Git</li>
-    </ul>
-  </section>
 
-  <!-- EDUCATION -->
-  <section id="education">
-    <h2>Education</h2>
-    <p>B.E. Computer Science and Engineering — Student</p>
-  </section>
-
-  <!-- RESUME -->
-  <section id="resume">
-    <h2>Resume</h2>
-    <a href="M_HARSHINI_Resume.pdf" download class="button" style="background:#ffd166; color:#12071a;">📥 Download Resume</a>
-  </section>
-
-  <!-- PROJECTS -->
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="projects-grid">
-
-      <!-- Project 1 -->
-      <div class="project-card" style="border:2px solid #ff4d6d;">
-        <h3 style="color:#ff4d6d;">Real-Time Sign Language Translator</h3>
-        <p>A machine learning project that translates sign language gestures into text/speech using Python and computer vision for hearing- and speech-impaired communication.</p>
-        <a href="Sign_Language_Translator.pptx" download class="button" style="background:#ffd166; color:#12071a;">📥 Download PPT</a>
-      </div>
-
-      <!-- Project 2 -->
-      <div class="project-card" style="border:2px solid #ffd166;">
-        <h3 style="color:#ffd166;">Fashion Outfit Recommendation System</h3>
-        <p>A machine learning model that recommends clothing outfits based on user preferences, styles, and trends using ML and data analytics.</p>
-        <a href="Fashion_Recommendation.pptx" download class="button" style="background:#ff4d6d; color:#ffffff;">📥 Download PPT</a>
-      </div>
-
-      <!-- Project 3 -->
-      <div class="project-card" style="border:2px solid #6cdbf7;">
-        <h3 style="color:#6cdbf7;">EEG-Based Epilepsy Detection System</h3>
-        <p>An ML-powered epilepsy detection model using EEG, SHAP explainability, and deployed with a Flask web app.</p>
-        <a href="EEG_Epilepsy_Detection.pptx" download class="button" style="background:#6cdbf7; color:#12071a;">📥 Download PPT</a>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>If you want to reach me, email me at: <a href="mailto:harshinimanoharan004@gmail.com">harshinimanoharan004@gmail.com</a></p>
-  </section>
-
+<script src="js/main.js"></script>
 </body>
 </html>
