@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HARSHINI | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    /* ===== Navbar ===== */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 50px;
+      background: #fff;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 25px;
+      list-style: none;
+    }
+
+    .nav-links li a {
+      text-decoration: none;
+      color: #000;
+      font-weight: 600;
+    }
+
+    .nav-links li a.active {
+      color: #007BFF;
+    }
+
+    .menu-toggle {
+      display: none;
+      font-size: 28px;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 50px;
+        background: rgba(255,255,255,0.95);
+        padding: 20px;
+        border-radius: 10px;
+      }
+      .nav-links.active { display: flex; }
+      .menu-toggle { display: block; }
+      .nav-links li { margin-bottom: 15px; }
+    }
+
+    /* ===== Sections ===== */
+    section { padding: 120px 50px; }
+    .hero { text-align: center; margin-top: 60px; }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="logo">HARSHINI</div>
+  <div class="menu-toggle" id="menu-toggle">☰</div>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="#home" class="active">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+  <div class="hero-content">
+    <h1>Hi, I'm <span>HARSHINI</span></h1>
+    <h2>Creative Web Developer & Designer</h2>
+    <p>
+       Designing digital spaces with creativity, elegance, and heart 💕<br>
+Let’s build something amazing together. Frontend Developer | UI Enthusiast | Problem Solver
+Building responsive, modern, and user-friendly experiences. Crafting stunning websites with creativity and precision.
+Where design meets innovation.
+    </p>
+    <a href="resume.pdf" class="btn" target="_blank">Download Resume</a>
+  </div>
+</section>
+
+<!-- Dummy sections for scrolling -->
+<section id="about">
+ <!-- About Section -->
+<section id="about" class="about-section">
+  <div class="about-container">
+
+    <!-- Left: Photo -->
+    <div class="about-photo">
+      <img src="profile.JPEG" alt="HARSHINI Photo">
+    </div>
+
+    <!-- Right: Details -->
+    <div class="about-details">
+      <h1>Hi, I'm HARSHINI</h1>
+      <h3>Creative Web Developer & Designer</h3>
+
+      <!-- Professional Summary -->
+      <p>
+        I am an aspiring and enthusiastic B.E. Computer Science and Engineering student 
+        with a strong interest in data analysis and visualization. I am seeking a challenging role 
+        in a forward-thinking organization where I can apply my technical knowledge and analytical skills 
+        to develop innovative solutions. I am committed to continuous learning and contributing to projects 
+        that drive energy efficiency and digital transformation.I am passionate about creating visually appealing and interactive web experiences. 
+        With a strong foundation in HTML, CSS, JavaScript, and modern frameworks, I transform ideas into responsive websites that engage users.
+        I also enjoy working with Python frameworks like Django and FastAPI to build scalable backend applications. 
+        I strive for clean, maintainable code and intuitive user interfaces.Beyond coding, I have a keen interest in data visualization tools like Power BI and Excel to derive actionable insights. 
+        My goal is to bridge creativity with technology to build meaningful digital experiences.
+      </p>
+
+      <!-- Internships -->
+      <h4>Internships:</h4>
+      <ul>
+        <li>I have completed two online internships</li>
+        <p>Web design video training in software/ technology at August-2025 in Caddesk jaipur with the duration of 30 days.
+           Virtual internships program in Data Science at January 2026 in Code Alpha with the duration of 10 days.</p>
+      </ul>
+
+      <!-- Certifications -->
+      <h4>Certifications:</h4>
+      <ul>
+        <p>Microsoft Power BI Data Analyst i have completed this course at March 2024.
+          I have completed 2 course in NPTL that is National Program on Techonogy enhanced Learning (i) Software Computational Design at October 2024 (ii) Introduction to Industry 4.0 and Industrial IoT at June 2025 and i got certified in the examination.
+          I have completed Online Certification Course on Python at May 2024 in a Guvi platfrom.</p>
+        
+      </ul>
+
+      <!-- Workshops -->
+      <h4>Workshops: </h4>
+      <ul>
+        <li>I have attented two workshops</li>
+        <p>Implication of artificial intelligence for electrical vehicle and charging technology at October-2023 in Coimbatore at Karpagam college of Engineering.
+        AI Revolution in cyber security summit’23 at nov-2023 in Perambalur at Dhanalakshmi srinivasan engineering college</p>
+      </ul>
+      <!-- Education -->
+      <h4>Education:</h4>
+      <ul> 
+        I did my B.E. Computer Science and Engineering in Dhanalakshmi Srinivasan Engineering College at Perambalur with 8.5 CGPA and
+        I did my Higher Secondary Education and Secondary School Leaving Certificate in Amala Girls' Higher Secondary School at Musiri with 68 percentage.
+      </ul>
+
+      <!-- Languages -->
+      <div class="languages">
+        <h4>Languages I Know:</h4>
+        <div class="language-list">
+          <div class="language-circle" data-tooltip="Native"><span>Tam</span></div>
+          <div class="language-circle" data-tooltip="Proficient"><span>Eng</span></div>
+          <div class="language-circle" data-tooltip="Native"><span>Tel</span></div>
+        </div>
+      </div>
+
+      <a href="resume.pdf" class="btn" target="_blank">Download Resume</a>
+    </div>
+
+  </div>
+
+
+<!-- Social Links -->
+<div class="social-links">
+  <h4>Connect with me </h4>
+  <a href="https://www.linkedin.com/in/harshini-manoharan-62391b331" target="_blank">
+    LinkedIn Profile
+  </a>
+  <a href="https://github.com/Harshini004-mano" target="_blank">
+    GitHub Profile
+  </a>
+</div>
+
+
+
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="skills-section">
+  <h1>Skills</h1>
+
+  <div class="skills-grid">
+
+    <!-- Skill Cards with detailed description -->
+    <div class="skill-card" onclick="openModal('HTML', 'HTML stands for HyperText Markup Language. It is the foundation of every website and is used to structure content such as headings, paragraphs, links, images, and lists. Learning HTML is essential for creating web pages and building web applications.', 'fab fa-html5')">
+      <i class="fab fa-html5"></i>
+      <span class="tooltip">HTML</span>
+    </div>
+
+    <div class="skill-card" onclick="openModal('CSS', 'CSS (Cascading Style Sheets) is used to style HTML content. It controls colors, fonts, spacing, layout, and responsiveness across devices. With CSS, websites become visually appealing, interactive, and user-friendly. Advanced techniques like Flexbox, Grid, and animations enhance user experience.', 'fab fa-css3-alt')">
+      <i class="fab fa-css3-alt"></i>
+      <span class="tooltip">CSS</span>
+    </div>
+
+    <div class="skill-card" onclick="openModal('JavaScript', 'JavaScript is a scripting language that adds interactivity to websites. It powers dynamic elements such as animations, pop-ups, forms, and API interactions. JavaScript is essential for creating responsive and modern web applications. Libraries and frameworks like React enhance functionality and productivity.', 'fab fa-js')">
+      <i class="fab fa-js"></i>
+      <span class="tooltip">JavaScript</span>
+    </div>
+
+    <div class="skill-card" onclick="openModal('Git', 'Git is a version control system that tracks changes in your code. It allows developers to manage project history, collaborate efficiently, and revert to previous versions when needed. Git is essential for team projects and ensures organized, maintainable code.', 'fab fa-git-alt')">
+      <i class="fab fa-git-alt"></i>
+      <span class="tooltip">Git</span>
+    </div>
+
+    <div class="skill-card" onclick="openModal('GitHub', 'GitHub is a web-based platform for hosting and managing Git repositories. It enables collaboration among developers, code sharing, pull requests, and issue tracking. GitHub is widely used for open-source projects and professional development workflows.', 'fab fa-github')">
+      <i class="fab fa-github"></i>
+      <span class="tooltip">GitHub</span>
+    </div>
+
+    <div class="skill-card" onclick="openModal('Power BI', 'Power BI is Microsoft’s business analytics tool. It allows you to visualize data, create interactive dashboards, and share insights. With Power BI, complex data sets can be analyzed quickly, helping businesses make informed, data-driven decisions.', 'fas fa-chart-bar')">
+      <i class="fas fa-chart-bar"></i>
+      <span class="tooltip">Power BI</span>
+    </div>
+
+    <div class="skill-card" onclick="openModal('Excel', 'Excel is a powerful tool for data analysis and organization. It provides features like formulas, charts, pivot tables, and macros. Excel is used for financial analysis, reporting, and automating repetitive tasks, making it a key skill for data-driven decision-making.', 'fas fa-file-excel')">
+      <i class="fas fa-file-excel"></i>
+      <span class="tooltip">Excel</span>
+    </div>
+
+    <div class="skill-card" onclick="openModal('Tailwind CSS', 'Tailwind CSS is a utility-first CSS framework that speeds up UI development. It provides pre-defined classes to style elements quickly, enabling responsive, modern, and customizable designs. Tailwind enhances productivity and allows for rapid prototyping without writing extensive custom CSS.', 'fas fa-wind')">
+      <i class="fas fa-wind"></i>
+      <span class="tooltip">Tailwind CSS</span>
+    </div>
+
+    <div class="skill-card" onclick="openModal('UI/UX', 'UI/UX design is the process of crafting user interfaces (UI) and experiences (UX) that are intuitive, efficient, and visually appealing. UI/UX designers focus on layout, typography, colors, and interactions to ensure a seamless experience for users across devices.', 'fas fa-pencil-ruler')">
+      <i class="fas fa-pencil-ruler"></i>
+      <span class="tooltip">UI/UX</span>
+    </div>
+
+    <div class="skill-card" onclick="openModal('FastAPI', 'FastAPI is a modern Python web framework for building APIs quickly and efficiently. It is high-performance, supports asynchronous programming, automatic documentation, and data validation. FastAPI is widely used for developing scalable backend applications and microservices.', 'fas fa-bolt')">
+      <i class="fas fa-bolt"></i>
+      <span class="tooltip">FastAPI</span>
+    </div>
+
+    <div class="skill-card" onclick="openModal('Django', 'Django is a high-level Python web framework that encourages rapid development and clean, maintainable code. It provides built-in features like authentication, admin interface, and ORM for database management. Django is used for building robust, secure, and scalable web applications.', 'fas fa-leaf')">
+      <i class="fas fa-leaf"></i>
+      <span class="tooltip">Django</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- Modal -->
+<div id="skillModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <i id="modalIcon" class="fab fa-html5 fa-4x"></i>
+    <h2 id="modalTitle">HTML</h2>
+    <p id="modalDescription">HTML is the backbone of every website.</p>
+  </div>
+</div>
+
+
+<!-- Projects Section -->
+<section id="projects" class="projects-section">
+  <h1>Projects</h1>
+
+  <div class="projects-grid">
+
+    <!-- Project 1 -->
+    <div class="project-card">
+      <h3>Explainable AI-Driven EEG Channel Selection</h3>
+      <p>Developed an intelligent EEG-based epilepsy detection system using ML & DL, integrated with Explainable AI and Flask web app.</p>
+      <a href="pdf/eeg.pdf" target="_blank">Open PDF</a>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project-card">
+      <h3>Real-Time Sign Language Translator</h3>
+      <p>Recognizes ASL hand gestures using computer vision and converts them into text in real-time, bridging communication gaps.</p>
+      <a href="pdf/introduction.pdf" target="_blank">Open PDF</a>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="project-card">
+      <h3>Fashion Outfit Recommender System</h3>
+      <p>An intelligent styling assistant that suggests personalized outfits based on preferences, body type, occasion, and fashion trends.</p>
+      <a href="pdf/fashion.pdf" target="_blank">Open PDF</a>
+    </div>
+
+    <!-- Project 4 -->
+    <div class="project-card">
+      <h3>AI Multi-Disease Ophthalmic Screening</h3>
+      <p>AI-powered system for detecting glaucoma, DR, AMD, and cataract from fundus images, integrated with explainable outputs.</p>
+      <a href="pdf/eye.pdf" target="_blank">Open PDF</a>
+    </div>
+
+  </div>
+</section>
+
+
+<section id="contact">
+ <!-- Contact Section -->
+<section class="contact-section">
+  <h2>Contact me </h2>
+  <p>
+    Email @ : 
+    <a href="mailto:harshinimanoharan004@gmail.com" class="email-link">
+      harshinimanoharan004@gmail.com
+    </a>
+  </p>
+
+  <div class="contact-icons">
+    <a href="mailto:harshinimanoharan004@gmail.com">
+      <i class="fas fa-envelope"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/harshini-manoharan-62391b331" target="_blank">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="https://github.com/Harshini004-mano" target="_blank">
+      <i class="fab fa-github"></i>
+    </a>
+    <a href="https://www.instagram.com/lil__hear_t_" target="_blank">
+      <i class="fab fa-instagram"></i>
+    </a>
+  </div>
+</section>
+
+<!-- JS -->
+<script>
+  // Mobile menu toggle
+  const toggle = document.getElementById("menu-toggle");
+  const navLinks = document.getElementById("nav-links");
+
+  toggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+
+  // Smooth scroll for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+      if(navLinks.classList.contains('active')) navLinks.classList.remove('active');
+    });
+  });
+</script>
+
+</body>
+</html>
